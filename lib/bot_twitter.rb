@@ -44,7 +44,7 @@ end
 def like_hello
   @client.search("#{@hashtbonjour}", result_type: "recent").take(25).collect do |tweet|
     @client.favorite(tweet)
-    puts "#{tweet.user.screen_name} : #{tweet.text}"
+    puts "@#{tweet.user.screen_name} : #{tweet.text}"
   end
 end
 
@@ -52,7 +52,7 @@ def follow_hello
   @client.search("#{@hashtbonjour}", result_type: "recent").take(25).collect do |tweet|
     unless tweet.user == @client.user || @client.friends.include?(tweet.user)
       @client.follow(tweet.user)
-      puts "#{tweet.user.screen_name}"
+      puts "@#{tweet.user.screen_name}"
     end
   end
 end
@@ -63,7 +63,7 @@ def stream_hello
     unless tweet.user == @client.user
     @client.favorite!(tweet)
     @client.follow(tweet.user)
-    puts "#{tweet.user.screen_name} : #{tweet.text}"
+    puts "@#{tweet.user.screen_name} : #{tweet.text}"
     end
   end
 end
