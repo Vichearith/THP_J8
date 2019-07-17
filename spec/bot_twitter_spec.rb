@@ -5,3 +5,9 @@ describe "the login_twitter method" do
     expect(login_twitter).not_to be_nil
   end
 end
+
+describe "the login_streaming method" do
+  it "should return client_stream, and not nil" do
+    expect(login_twitter_stream).not_to be_nil
+  end
+end
