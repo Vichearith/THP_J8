@@ -1,6 +1,4 @@
 require_relative '../lib/bot_twitter'
-require 'twitter'
-require 'dotenv'
 
 describe "the login_twitter method" do
   it "should return client, and client is not nil" do
