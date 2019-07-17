@@ -1,4 +1,4 @@
-# Project THP Bot Twitter
+# # The Hacking Project - Jour 8 - Bot Twitter
 
 Création d'un bot twitter
 
