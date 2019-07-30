@@ -1,4 +1,4 @@
-# # The Hacking Project - Jour 8 - Bot Twitter
+# The Hacking Project - Semaine 2 - Mercredi - Twitter Bot
 
 Création d'un bot twitter
 
